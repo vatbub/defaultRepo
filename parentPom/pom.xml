@@ -38,6 +38,14 @@
 			<url>ftp://vatbub.bplaced.net/mavenRepo/release</url>
 		</repository>
 	</distributionManagement>
+	
+	<scm>
+		<connection>scm:git:git@github.com:vatbub/defaultRepo.git</connection>
+		<url>scm:git:git@github.com:vatbub/defaultRepo.git</url>
+		<developerConnection>scm:git:git@github.com:vatbub/defaultRepo.git</developerConnection>
+		<tag>testRelease</tag>
+	</scm>
+	
 	<build>
 		<extensions>
 			<!-- Enabling the use of FTP -->
