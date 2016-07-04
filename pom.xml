@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fokprojects</groupId>
 	<artifactId>parentPom</artifactId>
@@ -28,23 +29,25 @@
 	</organization>
 
 	<distributionManagement>
-		<snapshotRepository>
-			<id>fokSnapshots</id>
-			<url>ftp://vatbub.bplaced.net/mavenRepo/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>fokRelease</id>
-			<url>ftp://vatbub.bplaced.net/mavenRepo/release</url>
+			<id>bintray-vatbub-fokReleases</id>
+			<name>vatbub-fokReleases</name>
+			<url>https://api.bintray.com/maven/vatbub/fokReleases/${artifactId}/;publish=1</url>
 		</repository>
+		<snapshotRepository>
+			<id>bintray-vatbub-fokprojectsSnapshots</id>
+			<name>vatbub-fokprojectsSnapshots</name>
+			<url>https://api.bintray.com/maven/vatbub/fokprojectsSnapshots/${artifactId}/;publish=1</url>
+		</snapshotRepository>
 	</distributionManagement>
-	
+
 	<scm>
 		<connection>scm:git:git@github.com:vatbub/defaultRepo.git</connection>
 		<url>scm:git:git@github.com:vatbub/defaultRepo.git</url>
 		<developerConnection>scm:git:git@github.com:vatbub/defaultRepo.git</developerConnection>
 		<tag>testRelease</tag>
 	</scm>
-	
+
 	<build>
 		<extensions>
 			<!-- Enabling the use of FTP -->
@@ -55,22 +58,10 @@
 			</extension>
 		</extensions>
 		<plugins>
-			<!-- <plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<version>1.8</version>
-				<configuration>
-					<licenseName>apache_v2</licenseName>
-				</configuration>
-				<executions>
-					<execution>
-						<id>download-licenses</id>
-						<goals>
-							<goal>download-licenses</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin> -->
+			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>license-maven-plugin</artifactId> 
+				<version>1.8</version> <configuration> <licenseName>apache_v2</licenseName> 
+				</configuration> <executions> <execution> <id>download-licenses</id> <goals> 
+				<goal>download-licenses</goal> </goals> </execution> </executions> </plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
