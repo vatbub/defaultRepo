@@ -32,12 +32,12 @@
 		<repository>
 			<id>bintray-vatbub-fokReleases</id>
 			<name>vatbub-fokReleases</name>
-			<url>https://api.bintray.com/maven/vatbub/fokReleases/${artifactId}/;publish=1</url>
+			<url>https://api.bintray.com/maven/vatbub/fokReleases/${project.artifactId}/;publish=1</url>
 		</repository>
 		<snapshotRepository>
 			<id>bintray-vatbub-fokprojectsSnapshots</id>
 			<name>vatbub-fokprojectsSnapshots</name>
-			<url>https://api.bintray.com/maven/vatbub/fokprojectsSnapshots/${artifactId}/;publish=1</url>
+			<url>https://api.bintray.com/maven/vatbub/fokprojectsSnapshots/${project.artifactId}/;publish=1</url>
 		</snapshotRepository>
 	</distributionManagement>
 
