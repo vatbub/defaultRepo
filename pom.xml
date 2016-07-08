@@ -29,14 +29,14 @@
 
 	<distributionManagement>
 		<repository>
-			<id>bintray-vatbub-fokReleases</id>
-			<name>vatbub-fokReleases</name>
-			<url>https://api.bintray.com/maven/vatbub/fokReleases/${project.artifactId}/</url>
+			<id>bintray-vatbub-fokprojectsSnapshots</id>
+			<name>vatbub-fokprojectsSnapshots</name>
+			<url>https://api.bintray.com/maven/vatbub/fokprojectsSnapshots/${project.artifactId}</url>
 		</repository>
 		<snapshotRepository>
 			<id>bintray-vatbub-fokprojectsSnapshots</id>
 			<name>vatbub-fokprojectsSnapshots</name>
-			<url>https://api.bintray.com/maven/vatbub/fokprojectsSnapshots/${project.artifactId}/</url>
+			<url>https://api.bintray.com/maven/vatbub/fokprojectsSnapshots/${project.artifactId}</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -84,7 +84,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.3</version>
+				<version>2.4</version>
 				<configuration>
 					<goals>deploy</goals>
 					<autoversionsubmodules>true</autoversionsubmodules>
