@@ -36,7 +36,7 @@
 		<snapshotRepository>
 			<id>bintray-vatbub-fokprojectsSnapshots</id>
 			<name>vatbub-fokprojectsSnapshots</name>
-			<url>https://api.bintray.com/maven/vatbub/fokprojectsSnapshots/${project.artifactId}</url>
+			<url>https://oss.jfrog.org/artifactory/libs-snapshot/fokprojects/${project.artifactId}</url>
 		</snapshotRepository>
 	</distributionManagement>
 
