@@ -49,6 +49,11 @@
 		<url>http://fokprojects.mo-mar.de/</url>
 	</organization>
 
+	<properties>
+		<maven.build.timestamp.format>yyyyMMdd_HHmm</maven.build.timestamp.format>
+		<!-- Access the build timestamp with ${maven.build.timestamp} -->
+	</properties>
+
 	<distributionManagement>
 		<repository>
 			<id>bintray-vatbub-fokprojectsSnapshots</id>
@@ -139,6 +144,10 @@
 									<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 									<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 								</manifest>
+								<manifestEntries>
+									<Specification-Version>${project.version} - ${maven.build.timestamp}</Specification-Version>
+									<Implementation-Version>${project.version} - ${maven.build.timestamp}</Implementation-Version>
+								</manifestEntries>
 							</archive>
 							<descriptorRefs>
 								<descriptorRef>jar-with-dependencies</descriptorRef>
