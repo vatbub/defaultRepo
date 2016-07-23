@@ -70,7 +70,7 @@
 
 		<!-- Optional override to specify where the cached files are stored. Default 
 			is current working directory -->
-		<app.cacheDir>cache/</app.cacheDir>
+		<!-- <app.cacheDir>USERLIB/FxlDemo</app.cacheDir> -->
 
 		<!-- The Application vendor used by javapackager -->
 		<app.vendor>FOKProjects</app.vendor>
