@@ -143,10 +143,10 @@
 									<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 									<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 								</manifest>
-								<manifestEntries>
+								<!-- <manifestEntries>
 									<Specification-Version>${project.version} - ${maven.build.timestamp}</Specification-Version>
 									<Implementation-Version>${project.version} - ${maven.build.timestamp}</Implementation-Version>
-								</manifestEntries>
+								</manifestEntries> -->
 							</archive>
 							<descriptorRefs>
 								<descriptorRef>jar-with-dependencies</descriptorRef>
