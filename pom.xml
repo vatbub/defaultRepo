@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fokprojects</groupId>
 	<artifactId>parentPom</artifactId>
@@ -73,6 +74,24 @@
 		<tag>testRelease</tag>
 	</scm>
 
+	<profiles>
+		<profile>
+			<id>developement</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<versionSuffix>-${buildNumber}</versionSuffix>
+			</properties>
+		</profile>
+		<profile>
+			<id>release</id>
+			<properties>
+				<versionSuffix></versionSuffix>
+			</properties>
+		</profile>
+	</profiles>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -124,8 +143,8 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.2</version>
 				<configuration>
-					<goals>deploy</goals>
-					<autoversionsubmodules>true</autoversionsubmodules>
+					<!-- <goals>deploy</goals> <autoversionsubmodules>true</autoversionsubmodules> -->
+					<releaseProfiles>release</releaseProfiles>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -143,10 +162,11 @@
 									<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 									<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 								</manifest>
-								<!-- <manifestEntries>
-									<Specification-Version>${project.version} - ${maven.build.timestamp}</Specification-Version>
-									<Implementation-Version>${project.version} - ${maven.build.timestamp}</Implementation-Version>
-								</manifestEntries> -->
+								<manifestEntries>
+									<Specification-Version>
+										${project.version}${versionSuffix}</Specification-Version>
+									<Implementation-Version>${project.version}${versionSuffix}</Implementation-Version>
+								</manifestEntries>
 							</archive>
 							<descriptorRefs>
 								<descriptorRef>jar-with-dependencies</descriptorRef>
@@ -154,6 +174,23 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>buildnumber-maven-plugin</artifactId>
+				<version>1.4</version>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<goals>
+							<goal>create</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<doCheck>true</doCheck>
+					<doUpdate>true</doUpdate>
+				</configuration>
 			</plugin>
 			<!-- <plugin> <groupId>org.jfrog.buildinfo</groupId> <artifactId>artifactory-maven-plugin</artifactId> 
 				<version>2.4.0</version> <inherited>false</inherited> <executions> <execution> 
