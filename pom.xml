@@ -74,24 +74,6 @@
 		<tag>testRelease</tag>
 	</scm>
 
-	<profiles>
-		<profile>
-			<id>developement</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<versionSuffix>-${buildNumber}</versionSuffix>
-			</properties>
-		</profile>
-		<profile>
-			<id>release</id>
-			<properties>
-				<versionSuffix></versionSuffix>
-			</properties>
-		</profile>
-	</profiles>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -143,8 +125,8 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.2</version>
 				<configuration>
-					<!-- <goals>deploy</goals> <autoversionsubmodules>true</autoversionsubmodules> -->
-					<releaseProfiles>release</releaseProfiles>
+					<goals>deploy</goals>
+					<autoversionsubmodules>true</autoversionsubmodules>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -163,9 +145,7 @@
 									<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 								</manifest>
 								<manifestEntries>
-									<Specification-Version>
-										${project.version}${versionSuffix}</Specification-Version>
-									<Implementation-Version>${project.version}${versionSuffix}</Implementation-Version>
+									<Implementation-Build>$\{buildNumber}</Implementation-Build>
 								</manifestEntries>
 							</archive>
 							<descriptorRefs>
@@ -189,7 +169,7 @@
 				</executions>
 				<configuration>
 					<doCheck>true</doCheck>
-					<doUpdate>true</doUpdate>
+					<doUpdate>false</doUpdate>
 				</configuration>
 			</plugin>
 			<!-- <plugin> <groupId>org.jfrog.buildinfo</groupId> <artifactId>artifactory-maven-plugin</artifactId> 
