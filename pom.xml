@@ -50,8 +50,9 @@
 	</organization>
 
 	<properties>
-		<maven.build.timestamp.format>yyyyMMdd_HHmm</maven.build.timestamp.format>
+		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
 		<!-- Access the build timestamp with ${maven.build.timestamp} -->
+		<buildNumber>${maven.build.timestamp}</buildNumber>
 	</properties>
 
 	<distributionManagement>
@@ -156,7 +157,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>buildnumber-maven-plugin</artifactId>
 				<version>1.4</version>
@@ -176,7 +177,7 @@
 						<item>timestamp</item>
 					</items>
 				</configuration>
-			</plugin>
+			</plugin> -->
 			<!-- <plugin> <groupId>org.jfrog.buildinfo</groupId> <artifactId>artifactory-maven-plugin</artifactId> 
 				<version>2.4.0</version> <inherited>false</inherited> <executions> <execution> 
 				<id>build-info</id> <goals> <goal>publish</goal> </goals> <configuration> 
