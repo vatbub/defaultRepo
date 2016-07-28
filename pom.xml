@@ -146,6 +146,7 @@
 								</manifest>
 								<manifestEntries>
 									<Implementation-Build>${buildNumber}</Implementation-Build>
+									<Custom-Implementation-Build>${buildNumber}</Custom-Implementation-Build>
 								</manifestEntries>
 							</archive>
 							<descriptorRefs>
