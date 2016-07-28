@@ -145,8 +145,7 @@
 									<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 								</manifest>
 								<manifestEntries>
-									// <Implementation-Build>${buildNumber}</Implementation-Build>
-									<basedOnCommit>${buildNumber}</basedOnCommit>
+									<Implementation-Build>${buildNumber}</Implementation-Build>
 								</manifestEntries>
 							</archive>
 							<descriptorRefs>
@@ -171,6 +170,10 @@
 				<configuration>
 					<doCheck>true</doCheck>
 					<doUpdate>false</doUpdate>
+					<format>{0,date,yyyyMMddHHmmss}</format>
+					<items>
+						<item>timestamp</item>
+					</items>
 				</configuration>
 			</plugin>
 			<!-- <plugin> <groupId>org.jfrog.buildinfo</groupId> <artifactId>artifactory-maven-plugin</artifactId> 
