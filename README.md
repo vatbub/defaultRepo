@@ -6,20 +6,23 @@ To use the `fokprojects.parentPom` as your parent, just add the following reposi
 ```xml
 ...
 <repositories>
-  ...
-    <repository>
-      <id>fokReleaseRepo</id>
-      <name>FOK Release Repository</name>
-      <url>http://vatbub.bplaced.net/mavenRepo/release/</url>
-    </repository>
-    <repository>
-      <id>fokSnapshotRepo</id>
-      <name>FOK Snapshot Repository</name>
-      <url>http://vatbub.bplaced.net/mavenRepo/snapshots/</url>
-    </repository>
-  ...
-  </repositories>
-  ...
+	...
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>bintray-vatbub-fokprojectsSnapshots</id>
+			<name>bintray</name>
+			<url>http://dl.bintray.com/vatbub/fokprojectsSnapshots</url>
+		</repository>
+		<repository>
+			<snapshots />
+			<id>snapshots</id>
+			<name>libs-snapshot</name>
+			<url>https://oss.jfrog.org/artifactory/libs-snapshot</url>
+		</repository>
+	</repositories>
+  	...
   <parent>
 		<groupId>fokprojects</groupId>
 		<artifactId>parentPom</artifactId>
