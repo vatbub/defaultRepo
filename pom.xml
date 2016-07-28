@@ -168,7 +168,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<doCheck>true</doCheck>
+					<doCheck>false</doCheck>
 					<doUpdate>false</doUpdate>
 					<format>{0,date,yyyyMMddHHmmss}</format>
 					<items>
