@@ -53,6 +53,7 @@
 		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
 		<!-- Access the build timestamp with ${maven.build.timestamp} -->
 		<buildNumber>${maven.build.timestamp}</buildNumber>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<distributionManagement>
