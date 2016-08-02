@@ -25,6 +25,16 @@
 			<name>bintray</name>
 			<url>http://jcenter.bintray.com</url>
 		</repository>
+		<repository>
+			<id>codehaus</id>
+			<url>https://nexus.codehaus.org/snapshots</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -34,6 +44,16 @@
 			<id>central</id>
 			<name>bintray-plugins</name>
 			<url>http://jcenter.bintray.com</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>codehaus-snapshots</id>
+			<url>https://nexus.codehaus.org/snapshots</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
 		</pluginRepository>
 	</pluginRepositories>
 
@@ -179,7 +199,8 @@
 		</plugins>
 		<pluginManagement>
 			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
