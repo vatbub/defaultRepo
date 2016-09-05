@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fokprojects</groupId>
 	<artifactId>parentPom</artifactId>
-	<version>0.0.11</version>
+	<version>0.0.12-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>FOKProjects Parent Pom</name>
 	<description>A global pom for all fok projects</description>
@@ -85,7 +85,7 @@
 		<connection>scm:git:git@github.com:vatbub/defaultRepo.git</connection>
 		<url>scm:git:git@github.com:vatbub/defaultRepo.git</url>
 		<developerConnection>scm:git:git@github.com:vatbub/defaultRepo.git</developerConnection>
-		<tag>parentPom-0.0.11</tag>
+		<tag>testRelease</tag>
 	</scm>
 
 	<build>
