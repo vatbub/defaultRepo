@@ -4,9 +4,10 @@ jdk:
 cache:
   directories:
   - "$HOME/.m2"
-before_install: 
-  - git clone -b travis `git config --get remote.origin.url` target/travis
-install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U --settings target/travis/settings.xml
+before_install:
+- git clone -b travis `git config --get remote.origin.url` target/travis
+install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U --settings
+  target/travis/settings.xml
 script: mvn test -B --settings target/travis/settings.xml
 after_success: mvn clean deploy --settings target/travis/settings.xml -DskipTests=true
 branches:
@@ -22,3 +23,4 @@ env:
   global:
   - secure: Xv/ymGP8k9v9W7pn6C/FoQJxnsPRXvFEJt7GiZR9gyAh7dyg+iiKggwl6li8NAQC8vegiBfPEE/RJjn0KsT/3g/Bv12plpC4mLweoXJM4QsVaaWLZQyUZqmQBkGh89BEfyUo+8lzovPpc+94FoVJEsFahA8xUmA6FziM7+LdxgoByDH3rFAdgKkPFNV7LJjmqlNJ4YGgojVs/sV3eQOKsaSM1T4198Gl0NT9hk8Hv5cSXDRqTkJUqxk2h26VhWVTHAutGhoD4aAdjC8bOB03m9uPOO+MT4+pYmZ87a7MyIK1AqubowVkWeNg34Q+ynbQPvVoBjus8Qep08Br2MlSimfljec0gXYZv6iA/u+SSGijdeGjHFqqNlm2XdAguUKnVkTRvq4GAjeEoWgg5EUvQ81TJ3+KR1Ew2nPdl5VNUt0tQSrf7MGUZBQgVYs2gKDtYCdnltlIUQ6hxI/BhBaZhq7cj7rfT1VBK/UagjTEiCAl1uvrd6+H0AbiXVoJPwEzCxXhz7u9tlcDQpcFZkDtRyZWmiDjTyO7D4W527Pq/rV6MsYjf+VU4Z1WF9OzBo+R83lNHa8psQMgtRXWlVn9kjND5H9NXk1k0mCUqTxRN3/z/b9iH8h6Lfb/iuYCyIyMKMEwVjgQrgqf86T1aZLP0ZIP2WGpJCGsR96J53lsz8w=
   - secure: mi8hJBZiRPFhep5AoXIcP1uZgPAlwiI0yNEaGtcNOLMgAFPQ6CNRf6+bxmdO+JGyHWHTjZ1EI1dhoYke+IGvM7alpkEp54uYHWXkEvDE1xENB9DuUOhmBySk0X1924VWpo4nBMPzIhOSfPLZFZBBGmUfmiZOMM9eNpdOc/Y0wYCfDLXd9yxQSP66mu8dAgQQNkbqA+JqVsu8xCT6jA/y+AvY0NTFLdj+XhCA1H9RHDH3XDK/HKgLEGRqOkOvPBLq2dvw825HgHvhPFykDZn6yH2rskzd2fjcVa7hn8xHgFWm3X2vlgcwFUqlk7NTZn2oZkcS+KX6xy6PN0+oeRLKlwR9lbbX/x0BT2Z298BugMH3Le4AEnFmcNcUi27IMr1hBYM3MEPCXI3ET6+ESW4DOjnwa9Aziah+GWbsK/qHp1sRY3HIryNWpBnApVugaPrzE3ydvm4HUtXB5XrSVBibTy9moPewHJPWqbwdagYygwoiQSIyoWLhQFovuDcMQmEFi0C1FHWvGliSl8ZsjrHjXO25CKXRytiiGfUGEu+t1pLekPmWVpsqY6FOcYL76QvzQGqsW0SjYaDLTonChjfC4SWqXTteXcwVe7gmnxJtl7veD6V+tpBGVmUYrj1kOtd3k3bkEbRTfC7X6XEf3oVduSHWHHEMUM2I/FP6vValZqY=
+  - secure: g4BeZ0bVDk/9WGpl9o7zTBnjXBm3qAqGCTqeb2Vgpp8eu+DecIb9Y5F6qgU03dJHukp9xZsuwjfViGZGCxD+rRMrI0yg9MeCYXAodt4oAjKNHGCcRzSSEueU0/zSLRYiDxD5CAq9KudNTzc3Ue53PRpr9cmLre1d78NvuM/dRGkVSlnFqbfawH5VgVEnicPaQZZMFzTkAXEwoGOVY4B+IF80+wWISPtdd/Sn8feWEfDkGrATP0iRvCVIIh/pS2+b06TtnOnEbTmXMi8nNIn6h2VRC/ajO108V6Kk58+WYCn1BLonkX3cG0TYsr97N35jBMiee6nmBxl9aSV3jU/Ga2KKiXZ/zwnYPnX3SOSKGtTRB/Bp+k+IEQkXmViR6uu5KAtpKGFKu+b2OwzNyy8Pc54a0ImrsR6tsFY2CWz9X8S0YL3f/wPD5SjnZmHKlefLnb2qY4fa4dCUOlpR3UVAobKGCN+shzTSQ5QIwjvt/cSafozUwXxTS+uBBvQR9w77isoXMH3KDXg58pOktCzhvMqm9apQpRV7RSBWmXHx4xd1HXkZa/wb3DpiSa4aiRHK+PzLmwODHvOhtCOUQjDT3lZzudi98QFAopI4W73fiRsc9ARnnbKThunxOTZzHCVDfes2xy6YFAK566GReTqXv3vjDR/H5Vc5BQutmt4PhSQ=
