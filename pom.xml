@@ -183,6 +183,22 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>com.srcclr</groupId>
+				<artifactId>srcclr-maven-plugin</artifactId>
+				<version>2.1.0</version>
+				<configuration>
+					<apiToken>${srcclrKey}</apiToken>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>scan</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>buildnumber-maven-plugin</artifactId> 
 				<version>1.4</version> <executions> <execution> <phase>validate</phase> <goals> 
 				<goal>create</goal> </goals> </execution> </executions> <configuration> <doCheck>false</doCheck> 
@@ -233,22 +249,6 @@
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
 					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>com.srcclr</groupId>
-					<artifactId>srcclr-maven-plugin</artifactId>
-					<version>2.1.0</version>
-					<configuration>
-						<apiToken>${srcclrKey}</apiToken>
-					</configuration>
-					<executions>
-						<execution>
-							<phase>verify</phase>
-							<goals>
-								<goal>scan</goal>
-							</goals>
-						</execution>
-					</executions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
