@@ -26,7 +26,14 @@ To use the `fokprojects.parentPom` as your parent, just add the following reposi
   <parent>
 		<groupId>fokprojects</groupId>
 		<artifactId>parentPom</artifactId>
-		<version>0.0.2</version>
+		<version>0.0.12</version>
 	</parent>
 	...
 ```
+
+## Build the current snapshot
+1. Clone this repository
+2. Run `mvn install`
+
+## Build the latest release
+Repeat the steps mentioned above but switch to the `release` branch by running `git checkout release` prior to runing `mvn install`.
