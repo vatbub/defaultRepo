@@ -89,6 +89,16 @@
 		<tag>testRelease</tag>
 	</scm>
 
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/vatbub/defaultRepo/issues</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/vatbub/defaultRepo</url>
+	</ciManagement>
+
 	<reporting>
 		<plugins>
 			<plugin>
