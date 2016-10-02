@@ -84,7 +84,7 @@
 
 	<scm>
 		<connection>scm:git:git@github.com:vatbub/defaultRepo.git</connection>
-		<url>scm:git:git@github.com:vatbub/defaultRepo.git</url>
+		<url>https://github.com/vatbub/defaultRepo/blob/master/</url>
 		<developerConnection>scm:git:git@github.com:vatbub/defaultRepo.git</developerConnection>
 		<tag>testRelease</tag>
 	</scm>
