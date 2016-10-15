@@ -48,6 +48,8 @@
 			<properties>
 				<srcclrKey>${env.srcclrKey}</srcclrKey>
 				<coverallsKey>${env.coverallsKey}</coverallsKey>
+				<gpg.executable>gpg</gpg.executable>
+				<gpg.passphrase>${env.gpgPassphrase}</gpg.passphrase>
 			</properties>
 		</profile>
 	</profiles>
