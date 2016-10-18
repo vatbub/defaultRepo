@@ -70,9 +70,9 @@
 
 	<distributionManagement>
 		<repository>
-			<id>bintray-vatbub-fokprojectsSnapshots</id>
-			<name>vatbub-fokprojectsSnapshots</name>
-			<url>https://api.bintray.com/maven/vatbub/fokprojectsSnapshots/${project.artifactId}</url>
+			<id>bintray-vatbub-fokprojectsReleases</id>
+			<name>vatbub-fokprojectsReleases</name>
+			<url>https://api.bintray.com/maven/vatbub/fokprojectsReleases/${project.artifactId}/;publish=1</url>
 		</repository>
 		<snapshotRepository>
 			<id>bintray-vatbub-fokprojectsSnapshots</id>
