@@ -1,4 +1,4 @@
-# defaultRepo
+# defaultRepo [![Maven Central](https://img.shields.io/maven-central/v/com.github.vatbub/parentPom.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.vatbub%22%20AND%20a%3A%22parentPom%22)
 The default fok projects repository which also holds the parent pom of all fok projects.
 
 **We are now on Maven Central!!!**
