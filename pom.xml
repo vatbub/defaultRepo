@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.vatbub</groupId>
 	<artifactId>parentPom</artifactId>
@@ -79,7 +80,8 @@
 	<properties>
 		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
 		<!-- Access the build timestamp with ${maven.build.timestamp} -->
-		<buildNumber>${maven.build.timestamp}</buildNumber>
+		<!-- <buildNumber>${maven.build.timestamp}</buildNumber> -->
+		<gitRepoName>defaultRepo</gitRepoName>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -239,8 +241,8 @@
 									<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
 								</manifest>
 								<manifestEntries>
-									<Implementation-Build>${buildNumber}</Implementation-Build>
-									<Custom-Implementation-Build>${buildNumber}</Custom-Implementation-Build>
+									<Implementation-Build>${timestamp}</Implementation-Build>
+									<Custom-Implementation-Build>${timestamp}</Custom-Implementation-Build>
 								</manifestEntries>
 							</archive>
 							<descriptorRefs>
@@ -296,19 +298,66 @@
 					<releaseProfiles>release</releaseProfiles>
 				</configuration>
 			</plugin>
-			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>buildnumber-maven-plugin</artifactId> 
-				<version>1.4</version> <executions> <execution> <phase>validate</phase> <goals> 
-				<goal>create</goal> </goals> </execution> </executions> <configuration> <doCheck>false</doCheck> 
-				<doUpdate>false</doUpdate> <format>{0,date,yyyyMMddHHmmss}</format> <items> 
-				<item>timestamp</item> </items> </configuration> </plugin> -->
-			<!-- <plugin> <groupId>org.jfrog.buildinfo</groupId> <artifactId>artifactory-maven-plugin</artifactId> 
-				<version>2.4.0</version> <inherited>false</inherited> <executions> <execution> 
-				<id>build-info</id> <goals> <goal>publish</goal> </goals> <configuration> 
-				<deployProperties> <gradle>awesome</gradle> <review.team>qa</review.team> 
-				</deployProperties> <publisher> <contextUrl>https://oss.jfrog.org</contextUrl> 
-				<username>deployer</username> <password>{DESede}...</password> <repoKey>libs-release-local</repoKey> 
-				<snapshotRepoKey>libs-snapshot-local</snapshotRepoKey> </publisher> </configuration> 
-				</execution> </executions> </plugin> -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>buildnumber-maven-plugin</artifactId>
+				<version>1.4</version>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<goals>
+							<goal>create</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<doCheck>false</doCheck>
+					<doUpdate>false</doUpdate>
+					<timestampFormat>{0,date,yyyyMMddHHmmss}</timestampFormat>
+					<items>
+						<item>timestamp</item>
+					</items>
+					<shortRevisionLength>5</shortRevisionLength>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.jfrog.buildinfo</groupId>
+				<artifactId>artifactory-maven-plugin</artifactId>
+				<version>2.4.0</version>
+				<inherited>false</inherited>
+				<executions>
+					<execution>
+						<id>build-info</id>
+						<goals>
+							<goal>publish</goal>
+						</goals>
+						<configuration>
+							<deployProperties>
+								<groupId>${project.groupId}</groupId>
+								<artifactId>${project.artifactId}</artifactId>
+								<version>${project.version}</version>
+								<travisBuildNumber>${env.TRAVIS_BUILD_NUMBER}</travisBuildNumber>
+								<gitBranch>${scmBranch}</gitBranch>
+							</deployProperties>
+							<publisher>
+								<contextUrl>https://oss.jfrog.org</contextUrl>
+								<username>deployer</username>
+								<password>{DESede}...</password>
+								<repoKey>oss-release-local</repoKey>
+								<snapshotRepoKey>oss-snapshot-local</snapshotRepoKey>
+							</publisher>
+							<buildInfo>
+								<buildNumber>${env.TRAVIS_BUILD_NUMBER}</buildNumber>
+								<buildUrl>https://travis-ci.org/vatbub/${gitRepoName}/builds/${env.TRAVIS_BUILD_NUMBER}</buildUrl>
+								<vcsRevision>${buildNumber}</vcsRevision>
+							</buildInfo>
+							<licenses>
+								<autoDiscover>true</autoDiscover>
+							</licenses>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>
