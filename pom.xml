@@ -348,7 +348,7 @@
 							</publisher>
 							<buildInfo>
 								<buildNumber>${env.TRAVIS_BUILD_NUMBER}</buildNumber>
-								<buildUrl>https://travis-ci.org/vatbub/${gitRepoName}/builds/${env.TRAVIS_BUILD_NUMBER}</buildUrl>
+								<buildUrl>https://travis-ci.org/vatbub/${gitRepoName}/builds/${env.TRAVIS_BUILD_ID}</buildUrl>
 								<vcsRevision>${buildNumber}</vcsRevision>
 							</buildInfo>
 							<licenses>
