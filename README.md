@@ -1,34 +1,19 @@
-# defaultRepo
+# defaultRepo [![Maven Central](https://img.shields.io/maven-central/v/com.github.vatbub/parentPom.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.vatbub%22%20AND%20a%3A%22parentPom%22)
 The default fok projects repository which also holds the parent pom of all fok projects.
 
-To use the `fokprojects.parentPom` as your parent, just add the following repositories and parent to your pom:
+**We are now on Maven Central!!!**
+This however lead to a new groupId, sorry.
+
+To use the `com.github.vatbub:parentPom` as your parent, just add the following repositories and parent to your pom:
 
 ```xml
 ...
-<repositories>
-	...
-		<repository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>bintray-vatbub-fokprojectsSnapshots</id>
-			<name>bintray</name>
-			<url>http://dl.bintray.com/vatbub/fokprojectsSnapshots</url>
-		</repository>
-		<repository>
-			<snapshots />
-			<id>snapshots</id>
-			<name>libs-snapshot</name>
-			<url>https://oss.jfrog.org/artifactory/libs-snapshot</url>
-		</repository>
-	</repositories>
-  	...
-  <parent>
-		<groupId>fokprojects</groupId>
-		<artifactId>parentPom</artifactId>
-		<version>0.0.12</version>
-	</parent>
-	...
+<parent>
+	<groupId>com.github.vatbub</groupId>
+	<artifactId>parentPom</artifactId>
+	<version>0.0.17</version>
+</parent>
+...
 ```
 
 ## Build the current snapshot
