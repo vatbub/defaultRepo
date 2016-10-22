@@ -341,8 +341,8 @@
 							</deployProperties>
 							<publisher>
 								<contextUrl>https://oss.jfrog.org</contextUrl>
-								<username>deployer</username>
-								<password>{DESede}...</password>
+								<username>${env.OJO_USERNAME}</username>
+								<password>${env.OJO_PASSWORD}</password>
 								<repoKey>oss-release-local</repoKey>
 								<snapshotRepoKey>oss-snapshot-local</snapshotRepoKey>
 							</publisher>
