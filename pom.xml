@@ -336,6 +336,7 @@
 								<artifactId>${project.artifactId}</artifactId>
 								<version>${project.version}</version>
 								<gitBranch>${env.TRAVIS_BRANCH}</gitBranch>
+								<vcsRevision>${buildNumber}</vcsRevision>
 							</deployProperties>
 							<publisher>
 								<contextUrl>https://oss.jfrog.org</contextUrl>
@@ -347,7 +348,6 @@
 							<buildInfo>
 								<buildNumber>${env.TRAVIS_BUILD_NUMBER}</buildNumber>
 								<buildUrl>https://travis-ci.org/vatbub/${gitRepoName}/builds/${env.TRAVIS_BUILD_ID}</buildUrl>
-								<vcsRevision>${buildNumber}</vcsRevision>
 							</buildInfo>
 							<licenses>
 								<autoDiscover>true</autoDiscover>
