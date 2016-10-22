@@ -337,7 +337,7 @@
 								<artifactId>${project.artifactId}</artifactId>
 								<version>${project.version}</version>
 								<travisBuildNumber>${env.TRAVIS_BUILD_NUMBER}</travisBuildNumber>
-								<gitBranch>${scmBranch}</gitBranch>
+								<gitBranch>${env.TRAVIS_BRANCH}</gitBranch>
 							</deployProperties>
 							<publisher>
 								<contextUrl>https://oss.jfrog.org</contextUrl>
