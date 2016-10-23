@@ -104,7 +104,7 @@
 
 	<scm>
 		<connection>scm:git:git@github.com:vatbub/defaultRepo.git</connection>
-		<url>https://github.com/vatbub/defaultRepo/blob/master/</url>
+		<url>https://github.com/vatbub/defaultRepo</url>
 		<developerConnection>scm:git:git@github.com:vatbub/defaultRepo.git</developerConnection>
 		<tag>testRelease</tag>
 	</scm>
@@ -123,14 +123,18 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-changelog-plugin</artifactId>
-				<version>2.3</version>
+				<artifactId>maven-changes-plugin</artifactId>
+				<!-- Upgrade to 2.13 once released to fix summary issue -->
+				<version>2.11</version>
+				<configuration>
+					<includeOpenIssues>true</includeOpenIssues>
+					<onlyCurrentVersion>true</onlyCurrentVersion>
+					<columnNames>Key,Status,Type,Summary,Assignee,Fix Version</columnNames>
+				</configuration>
 				<reportSets>
 					<reportSet>
-						<id>dual-report</id>
 						<reports>
-							<report>changelog</report>
-							<report>file-activity</report>
+							<report>github-report</report>
 						</reports>
 					</reportSet>
 				</reportSets>
