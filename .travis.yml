@@ -11,6 +11,7 @@ install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U --setti
 script: mvn test -B --settings target/travis/settings.xml
 deploy:
   provider: script
+  skip_cleanup: true
   script:
     - mvn site site:deploy
     - mvn clean deploy --settings target/travis/settings.xml -DskipTests=true
