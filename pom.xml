@@ -98,7 +98,7 @@
 		</snapshotRepository>
 		<site>
 			<id>s3.site</id>
-			<url>s3://mvnsites/${project.artifactId}/${project.version}/site</url>
+			<url>s3://vatbubmvnsites/${project.artifactId}/${project.version}/site</url>
 		</site>
 	</distributionManagement>
 
