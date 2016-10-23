@@ -122,23 +122,19 @@
 	<reporting>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-changes-plugin</artifactId>
-				<!-- Upgrade to 2.13 once released to fix summary issue -->
-				<version>2.11</version>
+				<groupId>com.github.danielflower.mavenplugins</groupId>
+				<artifactId>gitlog-maven-plugin</artifactId>
+				<version>1.13.3</version>
 				<configuration>
-					<includeOpenIssues>true</includeOpenIssues>
-					<onlyCurrentVersion>true</onlyCurrentVersion>
-					<columnNames>Key,Status,Type,Summary,Assignee,Fix Version</columnNames>
+					<simpleHTMLChangeLogFilename>gitlog.html</simpleHTMLChangeLogFilename>
 				</configuration>
-				<reportSets>
-					<reportSet>
-						<reports>
-							<report>github-report</report>
-						</reports>
-					</reportSet>
-				</reportSets>
 			</plugin>
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-changes-plugin</artifactId> -->
+			<!-- Upgrade to 2.13 once released to fix summary issue -->
+			<!-- <version>2.11</version> <configuration> <includeOpenIssues>true</includeOpenIssues> 
+				<onlyCurrentVersion>true</onlyCurrentVersion> <columnNames>Key,Status,Type,Summary,Assignee,Fix 
+				Version</columnNames> </configuration> <reportSets> <reportSet> <reports> 
+				<report>github-report</report> </reports> </reportSet> </reportSets> </plugin> -->
 		</plugins>
 	</reporting>
 
