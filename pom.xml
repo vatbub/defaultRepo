@@ -96,6 +96,10 @@
 			<name>vatbub-fokprojectsSnapshots</name>
 			<url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>
 		</snapshotRepository>
+		<site>
+			<id>s3.site</id>
+			<url>s3://mvnsites/${project.artifactId}/${project.version}/site</url>
+		</site>
 	</distributionManagement>
 
 	<scm>
@@ -159,6 +163,14 @@
 	</profiles>
 
 	<build>
+		<extensions>
+			<extension>
+				<groupId>org.kuali.maven.wagons</groupId>
+				<artifactId>maven-s3-wagon</artifactId>
+				<version>1.2.1</version>
+			</extension>
+		</extensions>
+
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -355,6 +367,14 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.4</version>
+				<configuration>
+					<locales>en,fr,de</locales>
+				</configuration>
 			</plugin>
 		</plugins>
 		<pluginManagement>
