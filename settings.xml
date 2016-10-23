@@ -1,9 +1,10 @@
- <settings>
-	<localRepository/>
-	<interactiveMode/>
-	<usePluginRegistry/>
-	<offline/>
-	<pluginGroups/>
+
+<settings>
+	<localRepository />
+	<interactiveMode />
+	<usePluginRegistry />
+	<offline />
+	<pluginGroups />
 	<servers>
 		<server>
 			<id>bintray-vatbub-fokprojectsReleases</id>
@@ -21,8 +22,8 @@
 			<password>${env.AWS_SECRET_KEY}</password>
 		</server>
 	</servers>
-	<mirrors/>
-	<proxies/>
+	<mirrors />
+	<proxies />
 	<profiles>
 		<profile>
 			<id>disableCodehaus</id>
@@ -53,6 +54,8 @@
 			<properties>
 				<srcclrKey>${env.srcclrKey}</srcclrKey>
 				<coverallsKey>${env.coverallsKey}</coverallsKey>
+				<ojoUsername>${env.OJO_USERNAME}</ojoUsername>
+				<ojoPassword>${env.OJO_PASSWORD}</ojoPassword>
 			</properties>
 		</profile>
 	</profiles>
