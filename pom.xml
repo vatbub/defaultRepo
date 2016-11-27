@@ -255,6 +255,7 @@
 								<manifest>
 									<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 									<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+									<mainClass>${mainClass}</mainClass>
 								</manifest>
 								<manifestEntries>
 									<Implementation-Build>${timestamp}</Implementation-Build>
