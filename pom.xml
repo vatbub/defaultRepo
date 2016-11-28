@@ -193,24 +193,28 @@
 				<executions>
 					<execution>
 						<id>download-licenses</id>
+						<phase>package</phase>
 						<goals>
 							<goal>download-licenses</goal>
 						</goals>
 					</execution>
 					<execution>
 						<id>add-third-party</id>
+						<phase>package</phase>
 						<goals>
 							<goal>add-third-party</goal>
 						</goals>
 					</execution>
 					<execution>
 						<id>update-project-license</id>
+						<phase>package</phase>
 						<goals>
 							<goal>update-project-license</goal>
 						</goals>
 					</execution>
 					<execution>
 						<id>update-file-header</id>
+						<phase>package</phase>
 						<goals>
 							<goal>update-file-header</goal>
 						</goals>
