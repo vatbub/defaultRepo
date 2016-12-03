@@ -256,6 +256,7 @@
 				<version>2.6</version>
 				<executions>
 					<execution>
+						<id>buildMainExecutableJar</id>
 						<phase>package</phase>
 						<goals>
 							<goal>single</goal>
