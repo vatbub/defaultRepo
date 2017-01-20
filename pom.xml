@@ -220,6 +220,11 @@
                         <goals>
                             <goal>update-file-header</goal>
                         </goals>
+                        <configuration>
+                            <excludes>
+                                <exclude>*.jsp</exclude>
+                            </excludes>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
