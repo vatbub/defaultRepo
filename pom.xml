@@ -255,22 +255,6 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>com.srcclr</groupId>
-                <artifactId>srcclr-maven-plugin</artifactId>
-                <version>2.1.0</version>
-                <configuration>
-                    <apiToken>${srcclrKey}</apiToken>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>scan</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <groupId>org.eluder.coveralls</groupId>
                 <artifactId>coveralls-maven-plugin</artifactId>
                 <version>4.2.0</version>
