@@ -148,6 +148,9 @@
                         </reports>
                     </reportSet>
                 </reportSets>
+                <configuration>
+                    <additionalparam>-header &apos;&lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;&apos;</additionalparam>
+                </configuration>
             </plugin>
         </plugins>
     </reporting>
