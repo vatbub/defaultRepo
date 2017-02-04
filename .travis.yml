@@ -6,7 +6,7 @@ addons:
   apt:
     packages:
     - oracle-java8-installer
-    - ruby2.3.3
+    - ruby2.3: 'ppa:brightbox/ruby-ng'
 cache:
   directories:
   - $HOME/.m2
