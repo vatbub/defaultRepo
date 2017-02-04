@@ -12,10 +12,10 @@ cache:
   - $HOME/.m2
 before_install:
 - \curl -sSL https://get.rvm.io | bash -s stable --ruby
+- rvm reload
 - openssl aes-256-cbc -K $encrypted_fe529c65f9da_key -iv $encrypted_fe529c65f9da_iv
   -in github_deploy_key.enc -out github_deploy_key -d
 - git clone -b travis `git config --get remote.origin.url` target/travis
-- npm install --save-dev @alrra/travis-scripts
 - ls
 - gem install github_changelog_generator -v 1.13.0
 install: echo Install phase has been disabled as a complete build is run during deployment
@@ -25,14 +25,10 @@ before_cache:
 - mvn deploy --settings target/travis/settings.xml -DskipTests=true
 after_success:
   - github_changelog_generator
-  - |
-
-       $(npm bin)/set-up-ssh --key "$encrypted_XXXXXXXXXXXX_key" \
-                             --iv "$encrypted_XXXXXXXXXXXX_iv" \
-                             --path-encrypted-key ".travis/github_deploy_key.enc"
-       $(npm bin)/commit-changes --commands "github_changelog_generator" \
-                                   --commit-message "[skip ci] Updated Changelog" \
-                                   --branch master
+  - chmod 600 "$SSH_FILE" && printf "%s\nHost github.com  IdentityFile $SSH_FILE  LogLevel ERROR" >> ~/.ssh/config
+  - git add CHANGELOG.md
+  - git commit -m "[skip ci] Updated Changelog"
+  - git push origin master
 branches:
   only:
   - master
