@@ -1,4 +1,5 @@
 language: java
+sudo: required
 jdk:
 - oraclejdk8
 addons:
@@ -11,6 +12,7 @@ cache:
   directories:
   - $HOME/.m2
 before_install:
+- sudo yum install ruby
 - openssl aes-256-cbc -K $encrypted_fe529c65f9da_key -iv $encrypted_fe529c65f9da_iv
   -in github_deploy_key.enc -out github_deploy_key -d
 - git clone -b travis `git config --get remote.origin.url` target/travis
