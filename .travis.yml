@@ -24,7 +24,7 @@ before_cache:
 - mvn deploy --settings target/travis/settings.xml -DskipTests=true
 after_success:
   - github_changelog_generator
-  - chmod 600 "$SSH_FILE" && printf "%s\nHost github.com  IdentityFile $SSH_FILE  LogLevel ERROR" >> ~/.ssh/config
+  - chmod 600 "github_deploy_key" && printf "%s\nHost github.com  IdentityFile $SSH_FILE  LogLevel ERROR" >> ~/.ssh/config
   - git add CHANGELOG.md
   - git commit -m "[skip ci] Updated Changelog"
   - git push origin master
