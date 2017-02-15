@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/vatbub/defaultRepo/tree/HEAD)
-
-[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.19...HEAD)
+## [parentPom-0.0.20](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.20) (2017-02-15)
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.19...parentPom-0.0.20)
 
 **Implemented enhancements:**
 
