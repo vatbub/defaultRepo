@@ -11,7 +11,7 @@ To use the `com.github.vatbub:parentPom` as your parent, just add the following 
 <parent>
 	<groupId>com.github.vatbub</groupId>
 	<artifactId>parentPom</artifactId>
-	<version>0.0.17</version>
+	<version>0.0.21</version>
 </parent>
 ...
 ```
