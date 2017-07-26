@@ -3,16 +3,8 @@
 ## [parentPom-0.0.21](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.21) (2017-07-26)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.20...parentPom-0.0.21)
 
-**Closed issues:**
-
-- Add a maven plugin to check for dependency updates [\#5](https://github.com/vatbub/defaultRepo/issues/5)
-
 ## [parentPom-0.0.20](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.20) (2017-02-15)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.19...parentPom-0.0.20)
-
-**Implemented enhancements:**
-
-- Test [\#4](https://github.com/vatbub/defaultRepo/issues/4)
 
 ## [parentPom-0.0.19](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.19) (2016-12-03)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.18...parentPom-0.0.19)
@@ -22,10 +14,6 @@
 
 ## [parentPom-0.0.17](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.17) (2016-10-21)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.16...parentPom-0.0.17)
-
-**Implemented enhancements:**
-
-- Change groupId to com.github.vatbub [\#3](https://github.com/vatbub/defaultRepo/issues/3)
 
 ## [parentPom-0.0.16](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.16) (2016-10-18)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.15...parentPom-0.0.16)
