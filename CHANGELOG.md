@@ -1,5 +1,13 @@
 # Change Log
 
+## [Unreleased](https://github.com/vatbub/defaultRepo/tree/HEAD)
+
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.20...HEAD)
+
+**Closed issues:**
+
+- Add a maven plugin to check for dependency updates [\#5](https://github.com/vatbub/defaultRepo/issues/5)
+
 ## [parentPom-0.0.20](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.20) (2017-02-15)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.19...parentPom-0.0.20)
 
