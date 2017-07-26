@@ -209,20 +209,6 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <id>download-licenses</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>download-licenses</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>add-third-party</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>add-third-party</goal>
-                        </goals>
-                    </execution>
-                    <execution>
                         <id>update-project-license</id>
                         <phase>package</phase>
                         <goals>
