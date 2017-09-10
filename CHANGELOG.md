@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.21...HEAD)
 
+**Implemented enhancements:**
+
+- Add Hamcrest as an explicit test dependency [\#6](https://github.com/vatbub/defaultRepo/issues/6)
+
 **Closed issues:**
 
 - Convert to gradle [\#1](https://github.com/vatbub/defaultRepo/issues/1)
