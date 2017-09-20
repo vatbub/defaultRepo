@@ -23,8 +23,5 @@ To use the `com.github.vatbub:parentPom` as your parent, just add the following 
 ## Build the latest release
 Repeat the steps mentioned above but switch to the `release` branch by running `git checkout release` prior to runing `mvn install`.
 
-##Docs
-[Maven Site](http://vatbubmvnsites.s3-website-us-west-2.amazonaws.com/parentPom/0.0.20-SNAPSHOT/site/)
-
 ## Contributing
 Contributions of any kind are very welcome. Just fork and submit a Pull Request and we will be happy to merge. Just keep in mind that we use [Issue driven development](https://github.com/vatbub/defaultRepo/wiki/Issue-driven-development).
