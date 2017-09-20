@@ -257,7 +257,7 @@
                                 <password>${ojoPassword}</password>
                                 <repoKey>oss-release-local</repoKey>
                                 <snapshotRepoKey>oss-snapshot-local</snapshotRepoKey>
-                                <publishArtifacts>false</publishArtifacts>
+                                <publishArtifacts>true</publishArtifacts>
                                 <publishBuildInfo>true</publishBuildInfo>
                             </publisher>
                             <buildInfo>
