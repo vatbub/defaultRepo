@@ -8,10 +8,6 @@
 
 - Remove GPG signing from the release profile and replace it with the signing function on Bintray [\#7](https://github.com/vatbub/defaultRepo/issues/7)
 
-**Fixed bugs:**
-
-- Fix Artifactory-maven-plugin config [\#8](https://github.com/vatbub/defaultRepo/issues/8)
-
 ## [parentPom-0.0.22](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.22) (2017-09-20)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.21...parentPom-0.0.22)
 
