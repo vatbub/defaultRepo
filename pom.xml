@@ -1,5 +1,6 @@
 <!--suppress XmlHighlighting, XmlHighlighting -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.vatbub</groupId>
     <artifactId>parentPom</artifactId>
@@ -133,7 +134,7 @@
         <profile>
             <id>release</id>
             <!-- Put release-specific config here -->
-            <build />
+            <build/>
         </profile>
     </profiles>
 
@@ -286,18 +287,9 @@
                 <groupId>com.github.vatbub</groupId>
                 <artifactId>virustotal-maven-plugin</artifactId>
                 <version>1.1</version>
-                <executions>
-                    <execution>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>scan</goal>
-                        </goals>
-                        <configuration>
-                            <apiKey>${env.VIRUSTOTAL_API_KEY}</apiKey>
-                            <skipScan>true</skipScan>
-                        </configuration>
-                    </execution>
-                </executions>
+                <configuration>
+                    <apiKey>${env.VIRUSTOTAL_API_KEY}</apiKey>
+                </configuration>
             </plugin>
         </plugins>
         <pluginManagement>
