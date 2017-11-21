@@ -62,6 +62,14 @@
             <url>http://jcenter.bintray.com</url>
         </pluginRepository>
         <pluginRepository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>fokprojects-releases-plugins</id>
+            <name>fokprojects-releases-plugins</name>
+            <url>https://dl.bintray.com/vatbub/fokprojectsReleases/</url>
+        </pluginRepository>
+        <pluginRepository>
             <id>codehaus-snapshots</id>
             <url>https://nexus.codehaus.org/snapshots</url>
             <snapshots>
@@ -269,6 +277,23 @@
                             <licenses>
                                 <autoDiscover>true</autoDiscover>
                             </licenses>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.github.vatbub</groupId>
+                <artifactId>virustotal-maven-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>scan</goal>
+                        </goals>
+                        <configuration>
+                            <apiKey>${env.VIRUSTOTAL_API_KEY}</apiKey>
                         </configuration>
                     </execution>
                 </executions>
