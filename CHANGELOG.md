@@ -6,6 +6,7 @@
 
 **Fixed bugs:**
 
+- The artifactory maven plugin disables release deployment to bintray [\#9](https://github.com/vatbub/defaultRepo/issues/9)
 - Fix Artifactory-maven-plugin config [\#8](https://github.com/vatbub/defaultRepo/issues/8)
 
 ## [parentPom-0.0.23](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.23) (2017-10-28)
