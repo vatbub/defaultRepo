@@ -1,14 +1,22 @@
 # Change Log
 
+## [parentPom-0.0.25](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.25) (2018-10-27)
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.24...parentPom-0.0.25)
+
 ## [parentPom-0.0.24](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.24) (2017-12-16)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.23...parentPom-0.0.24)
 
 **Fixed bugs:**
 
+- The artifactory maven plugin disables release deployment to bintray [\#9](https://github.com/vatbub/defaultRepo/issues/9)
 - Fix Artifactory-maven-plugin config [\#8](https://github.com/vatbub/defaultRepo/issues/8)
 
 ## [parentPom-0.0.23](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.23) (2017-10-28)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.22...parentPom-0.0.23)
+
+**Implemented enhancements:**
+
+- Remove GPG signing from the release profile and replace it with the signing function on Bintray [\#7](https://github.com/vatbub/defaultRepo/issues/7)
 
 ## [parentPom-0.0.22](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.22) (2017-09-20)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.21...parentPom-0.0.22)
@@ -30,6 +38,10 @@
 
 ## [parentPom-0.0.20](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.20) (2017-02-15)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.19...parentPom-0.0.20)
+
+**Implemented enhancements:**
+
+- Test [\#4](https://github.com/vatbub/defaultRepo/issues/4)
 
 ## [parentPom-0.0.19](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.19) (2016-12-03)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.18...parentPom-0.0.19)
