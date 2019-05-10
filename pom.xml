@@ -8,7 +8,7 @@
     <name>FOKProjects Parent Pom</name>
     <description>A global pom for all fok projects</description>
     <inceptionYear>2016</inceptionYear>
-    <url>https://github.com/vatbub/defaultRepo</url>
+    <url>https://github.com/vatbub/${gitRepoName}</url>
 
 
     <developers>
@@ -83,7 +83,7 @@
 
     <organization>
         <name>Frederik Kammel</name>
-        <url>http://fokprojects.mo-mar.de/</url>
+        <url>https://fredplus10.me/</url>
     </organization>
 
     <properties>
@@ -113,20 +113,20 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git@github.com:vatbub/defaultRepo.git</connection>
-        <url>https://github.com/vatbub/defaultRepo</url>
-        <developerConnection>scm:git:git@github.com:vatbub/defaultRepo.git</developerConnection>
+        <connection>scm:git:git@github.com:vatbub/${gitRepoName}.git</connection>
+        <url>https://github.com/vatbub/${gitRepoName}</url>
+        <developerConnection>scm:git:git@github.com:vatbub/${gitRepoName}.git</developerConnection>
         <tag>testRelease</tag>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/vatbub/defaultRepo/issues</url>
+        <url>https://github.com/vatbub/${gitRepoName}/issues</url>
     </issueManagement>
 
     <ciManagement>
         <system>Travis CI</system>
-        <url>https://travis-ci.org/vatbub/defaultRepo</url>
+        <url>https://travis-ci.org/vatbub/${gitRepoName}</url>
     </ciManagement>
 
     <profiles>
