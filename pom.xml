@@ -89,8 +89,6 @@
 
     <properties>
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
-        <!-- Access the build timestamp with ${maven.build.timestamp} -->
-        <!-- <buildNumber>${maven.build.timestamp}</buildNumber> -->
         <gitRepoName>defaultRepo</gitRepoName>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <source.skip>true</source.skip>
@@ -224,28 +222,6 @@
                     <releaseProfiles>release</releaseProfiles>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>buildnumber-maven-plugin</artifactId>
-                <version>1.4</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>create</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <doCheck>false</doCheck>
-                    <doUpdate>false</doUpdate>
-                    <timestampFormat>{0,date,yyyyMMddHHmmss}</timestampFormat>
-                    <items>
-                        <item>timestamp</item>
-                    </items>
-                    <shortRevisionLength>5</shortRevisionLength>
-                </configuration>
-            </plugin>
 
             <plugin>
                 <groupId>com.github.vatbub</groupId>
@@ -270,8 +246,8 @@
                                 <mainClass>${mainClass}</mainClass>
                             </manifest>
                             <manifestEntries>
-                                <Implementation-Build>${timestamp}</Implementation-Build>
-                                <Custom-Implementation-Build>${timestamp}</Custom-Implementation-Build>
+                                <Implementation-Build>${maven.build.timestamp}</Implementation-Build>
+                                <Custom-Implementation-Build>${maven.build.timestamp}</Custom-Implementation-Build>
                             </manifestEntries>
                         </archive>
                         <descriptorRefs>
