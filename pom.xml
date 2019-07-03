@@ -181,6 +181,9 @@
                 <version>1.16</version>
                 <configuration>
                     <licenseName>apache_v2</licenseName>
+                    <excludes>
+                        <exclude>**/*.json</exclude>
+                    </excludes>
                 </configuration>
                 <executions>
                     <execution>
