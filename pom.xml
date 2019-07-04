@@ -1,10 +1,9 @@
 <!--suppress XmlHighlighting, XmlHighlighting -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.vatbub</groupId>
     <artifactId>parentPom</artifactId>
-    <version>0.0.26-SNAPSHOT</version>
+    <version>0.0.26</version>
     <packaging>pom</packaging>
     <name>FOKProjects Parent Pom</name>
     <description>A global pom for all fok projects</description>
@@ -115,7 +114,7 @@
         <connection>scm:git:git@github.com:vatbub/${gitRepoName}.git</connection>
         <url>https://github.com/vatbub/${gitRepoName}</url>
         <developerConnection>scm:git:git@github.com:vatbub/${gitRepoName}.git</developerConnection>
-        <tag>testRelease</tag>
+        <tag>parentPom-0.0.26</tag>
     </scm>
 
     <issueManagement>
@@ -132,7 +131,7 @@
         <profile>
             <id>release</id>
             <!-- Put release-specific config here -->
-            <build/>
+            <build />
         </profile>
     </profiles>
 
