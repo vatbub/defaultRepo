@@ -1,5 +1,8 @@
 # Change Log
 
+## [parentPom-0.0.26](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.26) (2019-07-04)
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.25...parentPom-0.0.26)
+
 ## [parentPom-0.0.25](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.25) (2018-10-27)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.24...parentPom-0.0.25)
 
