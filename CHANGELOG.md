@@ -1,5 +1,13 @@
 # Change Log
 
+## [Unreleased](https://github.com/vatbub/defaultRepo/tree/HEAD)
+
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.26...HEAD)
+
+**Implemented enhancements:**
+
+- Switch to JUnit 5 [\#10](https://github.com/vatbub/defaultRepo/issues/10)
+
 ## [parentPom-0.0.26](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.26) (2019-07-04)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.25...parentPom-0.0.26)
 
