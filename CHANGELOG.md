@@ -2,7 +2,14 @@
 
 ## [Unreleased](https://github.com/vatbub/defaultRepo/tree/HEAD)
 
-[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.26...HEAD)
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-1.0.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump maven-jar-plugin from 3.1.2 to 3.2.0 [\#16](https://github.com/vatbub/defaultRepo/pull/16) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+## [parentPom-1.0.0](https://github.com/vatbub/defaultRepo/tree/parentPom-1.0.0) (2019-08-13)
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.26...parentPom-1.0.0)
 
 **Implemented enhancements:**
 
