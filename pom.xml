@@ -39,7 +39,7 @@
             </snapshots>
             <id>jcenter</id>
             <name>bintray</name>
-            <url>http://jcenter.bintray.com</url>
+            <url>https://jcenter.bintray.com</url>
         </repository>
         <repository>
             <id>codehaus</id>
@@ -59,7 +59,7 @@
             </snapshots>
             <id>central</id>
             <name>bintray-plugins</name>
-            <url>http://jcenter.bintray.com</url>
+            <url>https://jcenter.bintray.com</url>
         </pluginRepository>
         <pluginRepository>
             <snapshots>
