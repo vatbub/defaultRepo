@@ -7,6 +7,10 @@
 **Merged pull requests:**
 
 - Bump maven-jar-plugin from 3.1.2 to 3.2.0 [\#16](https://github.com/vatbub/defaultRepo/pull/16) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump maven-surefire-plugin from 2.22.1 to 2.22.2 [\#15](https://github.com/vatbub/defaultRepo/pull/15) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump mockito-core from 3.0.0 to 3.2.4 [\#14](https://github.com/vatbub/defaultRepo/pull/14) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump jupiter.version from 5.5.1 to 5.5.2 [\#13](https://github.com/vatbub/defaultRepo/pull/13) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump junit from 4.12 to 4.13 [\#12](https://github.com/vatbub/defaultRepo/pull/12) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [parentPom-1.0.0](https://github.com/vatbub/defaultRepo/tree/parentPom-1.0.0) (2019-08-13)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.26...parentPom-1.0.0)
