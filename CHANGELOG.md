@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-1.0.0...HEAD)
 
+**Closed issues:**
+
+- Add sources and javadoc to snapshot and release builds [\#25](https://github.com/vatbub/defaultRepo/issues/25)
+
 **Merged pull requests:**
 
 - Bump maven-jar-plugin from 3.1.2 to 3.2.0 [\#16](https://github.com/vatbub/defaultRepo/pull/16) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
