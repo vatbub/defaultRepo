@@ -10,6 +10,7 @@
 
 **Merged pull requests:**
 
+- Bump maven-assembly-plugin from 3.2.0 to 3.3.0 [\#35](https://github.com/vatbub/defaultRepo/pull/35) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump jupiter.version from 5.6.1 to 5.6.2 [\#34](https://github.com/vatbub/defaultRepo/pull/34) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump jupiter.version from 5.6.0 to 5.6.1 [\#33](https://github.com/vatbub/defaultRepo/pull/33) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump mockito-core from 3.3.1 to 3.3.3 [\#32](https://github.com/vatbub/defaultRepo/pull/32) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
