@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/vatbub/defaultRepo/tree/HEAD)
-
-[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-1.0.2...HEAD)
+## [parentPom-1.0.3](https://github.com/vatbub/defaultRepo/tree/parentPom-1.0.3) (2020-09-01)
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-1.0.2...parentPom-1.0.3)
 
 **Closed issues:**
 
@@ -20,11 +19,10 @@
 - Bump maven-assembly-plugin from 3.2.0 to 3.3.0 [\#35](https://github.com/vatbub/defaultRepo/pull/35) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump jupiter.version from 5.6.1 to 5.6.2 [\#34](https://github.com/vatbub/defaultRepo/pull/34) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump jupiter.version from 5.6.0 to 5.6.1 [\#33](https://github.com/vatbub/defaultRepo/pull/33) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump mockito-core from 3.3.1 to 3.3.3 [\#32](https://github.com/vatbub/defaultRepo/pull/32) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump maven-javadoc-plugin from 3.1.1 to 3.2.0 [\#31](https://github.com/vatbub/defaultRepo/pull/31) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump maven-site-plugin from 3.8.2 to 3.9.0 [\#30](https://github.com/vatbub/defaultRepo/pull/30) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump mockito-core from 3.2.4 to 3.3.1 [\#28](https://github.com/vatbub/defaultRepo/pull/28) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump annotations from 17.0.0 to 19.0.0 [\#26](https://github.com/vatbub/defaultRepo/pull/26) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump awaitility from 3.1.6 to 4.0.2 [\#20](https://github.com/vatbub/defaultRepo/pull/20) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [parentPom-1.0.2](https://github.com/vatbub/defaultRepo/tree/parentPom-1.0.2) (2020-01-28)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-1.0.1...parentPom-1.0.2)
@@ -41,14 +39,6 @@
 - Bump jupiter.version from 5.5.2 to 5.6.0 [\#24](https://github.com/vatbub/defaultRepo/pull/24) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump hamcrest-library from 2.1 to 2.2 [\#22](https://github.com/vatbub/defaultRepo/pull/22) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump maven-site-plugin from 3.7.1 to 3.8.2 [\#21](https://github.com/vatbub/defaultRepo/pull/21) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump awaitility from 3.1.6 to 4.0.2 [\#20](https://github.com/vatbub/defaultRepo/pull/20) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump license-maven-plugin from 1.20 to 2.0.0 [\#19](https://github.com/vatbub/defaultRepo/pull/19) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump maven-assembly-plugin from 3.1.1 to 3.2.0 [\#17](https://github.com/vatbub/defaultRepo/pull/17) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump maven-jar-plugin from 3.1.2 to 3.2.0 [\#16](https://github.com/vatbub/defaultRepo/pull/16) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump maven-surefire-plugin from 2.22.1 to 2.22.2 [\#15](https://github.com/vatbub/defaultRepo/pull/15) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump mockito-core from 3.0.0 to 3.2.4 [\#14](https://github.com/vatbub/defaultRepo/pull/14) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump jupiter.version from 5.5.1 to 5.5.2 [\#13](https://github.com/vatbub/defaultRepo/pull/13) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump junit from 4.12 to 4.13 [\#12](https://github.com/vatbub/defaultRepo/pull/12) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [parentPom-1.0.0](https://github.com/vatbub/defaultRepo/tree/parentPom-1.0.0) (2019-08-13)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.26...parentPom-1.0.0)
@@ -111,10 +101,6 @@
 
 ## [parentPom-0.0.17](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.17) (2016-10-21)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.16...parentPom-0.0.17)
-
-**Implemented enhancements:**
-
-- Change groupId to com.github.vatbub [\#3](https://github.com/vatbub/defaultRepo/issues/3)
 
 ## [parentPom-0.0.16](https://github.com/vatbub/defaultRepo/tree/parentPom-0.0.16) (2016-10-18)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-0.0.15...parentPom-0.0.16)
