@@ -10,6 +10,13 @@
 
 **Merged pull requests:**
 
+- Bump mockito-core from 3.3.3 to 3.5.7 [\#51](https://github.com/vatbub/defaultRepo/pull/51) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump maven-resources-plugin from 3.1.0 to 3.2.0 [\#46](https://github.com/vatbub/defaultRepo/pull/46) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump annotations from 19.0.0 to 20.0.0 [\#45](https://github.com/vatbub/defaultRepo/pull/45) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump maven-war-plugin from 3.2.3 to 3.3.1 [\#41](https://github.com/vatbub/defaultRepo/pull/41) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump maven-site-plugin from 3.9.0 to 3.9.1 [\#39](https://github.com/vatbub/defaultRepo/pull/39) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump awaitility from 4.0.2 to 4.0.3 [\#37](https://github.com/vatbub/defaultRepo/pull/37) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump maven-source-plugin from 3.2.0 to 3.2.1 [\#36](https://github.com/vatbub/defaultRepo/pull/36) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump maven-assembly-plugin from 3.2.0 to 3.3.0 [\#35](https://github.com/vatbub/defaultRepo/pull/35) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump jupiter.version from 5.6.1 to 5.6.2 [\#34](https://github.com/vatbub/defaultRepo/pull/34) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump jupiter.version from 5.6.0 to 5.6.1 [\#33](https://github.com/vatbub/defaultRepo/pull/33) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
