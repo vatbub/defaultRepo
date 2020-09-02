@@ -1,5 +1,19 @@
 # Change Log
 
+## [Unreleased](https://github.com/vatbub/defaultRepo/tree/HEAD)
+
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-2.0.0-alpha2...HEAD)
+
+**Merged pull requests:**
+
+- Bump mockito-core from 3.5.7 to 3.5.9 [\#53](https://github.com/vatbub/defaultRepo/pull/53) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
+## [parentPom-2.0.0-alpha2](https://github.com/vatbub/defaultRepo/tree/parentPom-2.0.0-alpha2) (2020-09-01)
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-2.0.0-alpha1...parentPom-2.0.0-alpha2)
+
+## [parentPom-2.0.0-alpha1](https://github.com/vatbub/defaultRepo/tree/parentPom-2.0.0-alpha1) (2020-09-01)
+[Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-1.0.3...parentPom-2.0.0-alpha1)
+
 ## [parentPom-1.0.3](https://github.com/vatbub/defaultRepo/tree/parentPom-1.0.3) (2020-09-01)
 [Full Changelog](https://github.com/vatbub/defaultRepo/compare/parentPom-1.0.2...parentPom-1.0.3)
 
