@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump mockito-core from 3.5.9 to 3.5.10 [\#55](https://github.com/vatbub/defaultRepo/pull/55) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump annotations from 20.0.0 to 20.1.0 [\#54](https://github.com/vatbub/defaultRepo/pull/54) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump mockito-core from 3.5.7 to 3.5.9 [\#53](https://github.com/vatbub/defaultRepo/pull/53) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
