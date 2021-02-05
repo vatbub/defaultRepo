@@ -90,7 +90,7 @@
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <gitRepoName>defaultRepo</gitRepoName>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jupiter.version>5.7.0</jupiter.version>
+        <jupiter.version>5.7.1</jupiter.version>
         <sonar.links.homepage>https://github.com/vatbub/${gitRepoName}/</sonar.links.homepage>
         <sonar.links.scm>https://github.com/vatbub/${gitRepoName}/</sonar.links.scm>
     </properties>
