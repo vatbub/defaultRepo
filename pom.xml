@@ -32,55 +32,6 @@
         </license>
     </licenses>
 
-    <repositories>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>jcenter</id>
-            <name>bintray</name>
-            <url>https://jcenter.bintray.com</url>
-        </repository>
-        <repository>
-            <id>codehaus</id>
-            <url>https://nexus.codehaus.org/snapshots</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>bintray-plugins</name>
-            <url>https://jcenter.bintray.com</url>
-        </pluginRepository>
-        <pluginRepository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>fokprojects-releases-plugins</id>
-            <name>fokprojects-releases-plugins</name>
-            <url>https://dl.bintray.com/vatbub/fokprojectsReleases/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>codehaus-snapshots</id>
-            <url>https://nexus.codehaus.org/snapshots</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
-
     <organization>
         <name>Frederik Kammel</name>
         <url>https://fredplus10.me/</url>
